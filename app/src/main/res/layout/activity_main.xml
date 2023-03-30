@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.activity.MainActivity">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarSupport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="ChatBot"
+                android:textStyle="bold"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+
+
+             />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTyping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:gravity="start"
+                android:maxLines="1"
+                android:fontFamily="@font/segoe_ui_regular"
+                android:text="typing"
+                android:textAlignment="viewStart"
+                android:visibility="invisible"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle"
+                android:textColor="@color/black"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.google.android.material.appbar.MaterialToolbar>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMessageRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@+id/layTypeMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarSupport"
+        app:layout_constraintVertical_bias="0"
+        app:reverseLayout="true"
+        app:stackFromEnd="true"
+        tools:listitem="@layout/chat_me_item" />
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layTypeMessage"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_color_gray_10dp_rect"
+        android:layout_marginVertical="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="5dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSend"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etTypeAMessage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="4dp"
+            android:background="@android:color/transparent"
+            android:hint="@string/type_a_message"
+            android:imeOptions="actionSend"
+            android:textColor="#8E8EA9"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.485"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnSend"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_send_24"
+        app:layout_constraintTop_toBottomOf="@id/rvMessageRecyclerview"
+        android:background="@drawable/send_bg"
+       app:layout_constraintWidth_percent=".1"
+        android:padding="4dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/layTypeMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/layTypeMessage" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/fragmentContainerView"-->
+<!--        android:name="androidx.navigation.fragment.NavHostFragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:defaultNavHost="true"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:navGraph="@navigation/nav" />-->
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/bottom_nav"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:hapticFeedbackEnabled="true"-->
+<!--        app:labelVisibilityMode="unlabeled"-->
+<!--        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:menu="@menu/bottom_nav_menu" />-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">ChatBot</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile</string>
+    <string name="home">Home</string>
+    <string name="alert">Alert</string>
+    <string name="mode">Mode</string>
+    <string name="sms">Sms</string>
+    <string name="whatsup">Whatsup</string>
+    <string name="contacts">Contacts</string>
+    <string name="about">About</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="save">Save</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="chat">ChatBot</string>
+    <string name="type_a_message">Type your message ..</string>
+    <string name="permission_title">Title</string>
+    <string name="permission_description">Desc</string>
+    <string name="no_thanks">No</string>
+    <string name="button_ok">Ok</string>
+    <string name="permission_description_permanently">permission description permanently</string>
+    <string name="go_to_settings">go to settings</string>
+    <string name="post_notifications">POST_NOTIFICATIONS</string>
+    <string name="wake_lock">WAKE_LOCK</string>
+    <string name="internet">INTERNET</string>
+    <string name="access_network_state">ACCESS_NETWORK_STATE</string>
+    <string name="read_calendar">READ_CALENDAR</string>
+    <string name="write_calendar">WRITE_CALENDAR</string>
+    <string name="read_external_storage">READ_EXTERNAL_STORAGE</string>
+    <string name="camera">CAMERA</string>
+    <string name="write_external_storage">WRITE_EXTERNAL_STORAGE</string>
+    <string name="schedule_exact_alarm">SCHEDULE_EXACT_ALARM</string>
+    <string name="read_media_audio">READ_MEDIA_AUDIO</string>
+    <string name="read_media_video">READ_MEDIA_VIDEO</string>
+    <string name="read_media_images">READ_MEDIA_IMAGES</string>
+    <string name="vibrate">VIBRATE</string>
+    <string name="bluetooth_connect">BLUETOOTH_CONNECT</string>
+    <string name="activity_recognition">ACTIVITY_RECOGNITION</string>
+    <string name="use_full_screen_intent">USE_FULL_SCREEN_INTENT</string>
+    <string name="bluetooth">BLUETOOTH</string>
+    <string name="access_fine_location">ACCESS_FINE_LOCATION</string>
+    <string name="foreground_service">FOREGROUND_SERVICE</string>
+    <string name="need_this_permission_msg">need_this_permission_msg</string>
+</resources>
