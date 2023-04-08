@@ -12,7 +12,7 @@ fun ImageView.loadImage(imageUrl: String?) {
         Glide.with(context)
             .load(it)
             .transition(DrawableTransitionOptions.withCrossFade())
-            .error(R.drawable.peakpx)
+            .error(R.drawable.peakpx_3)
             .into(this)
     }
 }

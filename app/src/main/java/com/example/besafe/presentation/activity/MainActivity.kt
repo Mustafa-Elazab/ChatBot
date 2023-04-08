@@ -27,7 +27,7 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var adView: AdView
+ 
     lateinit var binding: ActivityMainBinding
 
 

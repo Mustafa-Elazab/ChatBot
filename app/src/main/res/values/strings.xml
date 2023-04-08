@@ -45,16 +45,8 @@
     <string name="need_this_permission_msg">need_this_permission_msg</string>
 
 
-    <string name="tmdb_attribution_title">Attribution</string>
-    <string name="tmdb_attribution_message">This product uses the ChatGPT API but is not endorsed or certified by ChatGPT.</string>
-    <string name="tmdb_attribution_button_text">GOT IT</string>
 
 
-    <string name="admob_app_id">ca-app-pub-8379418493888108~8370250895</string>
-    <string name="ad_banner_unit_id">ca-app-pub-1747848120826315/1405022371</string>
-    <string name="ad_native_unit_id">ca-app-pub-1747848120826315/1213450688</string>
-    <string name="ad_interstitial_unit_id">ca-app-pub-1747848120826315/5313489556</string>
-    <string name="ad_rewarded_unit_id">ca-app-pub-1747848120826315/9232546748</string>
 
 
 </resources>

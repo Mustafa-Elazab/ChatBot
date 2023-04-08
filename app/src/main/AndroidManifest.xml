@@ -18,13 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BeSafe"
         tools:targetApi="31">
-        <activity
-            android:name=".presentation.activity.PermsissionActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+
         <activity
             android:name=".presentation.activity.MainActivity"
             android:exported="true">
@@ -38,9 +32,6 @@
                 android:value="" />
         </activity>
 
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-8379418493888108~8370250895"/>
 
     </application>
 
