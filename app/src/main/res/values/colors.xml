@@ -19,14 +19,14 @@
 
 
     <color name="GrayLight">#F6F9FF</color>
-    <color name="GrayBlue">#83A8CE</color>
+    <color name="GrayBlue">#92B5DA</color>
     <color name="Green">#67C06C</color>
     <color name="GreenLight">#CAEDCD</color>
     <color name="Red">#FA7674</color>
     <color name="RedLight">#F6E6E7</color>
     <color name="Blue">#2995FD</color>
     <color name="BlueLight">#E4F2FF</color>
-
+    <color name="light_blue">#A8C7E9</color>
 
     <!--    lightTheme-->
 
