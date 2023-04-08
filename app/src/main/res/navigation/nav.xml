@@ -3,32 +3,72 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav"
-    app:startDestination="@id/homeFragment">
-
+    app:startDestination="@id/splashFragment">
     <fragment
-        android:id="@+id/profileFragment"
-        android:name="com.example.besafe.presentation.fragment.profile.ProfileFragment"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" >
-        <action
-            android:id="@+id/action_profileFragment_to_contactFragment"
-            app:destination="@id/contactFragment" />
-    </fragment>
+        android:id="@+id/chatFragment"
+        android:name="com.example.besafe.presentation.fragment.chat.ChatFragment"
+        android:label="ChatFragment"
+        tools:layout="@layout/fragment_chat"
+        />
+    <fragment
+        android:id="@+id/imageFragment"
+        android:name="com.example.besafe.presentation.fragment.image.ImageFragment"
+        android:label="ImageFragment"
+        tools:layout="@layout/fragment_image"
+        />
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.besafe.presentation.fragment.home.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
-    <fragment
-        android:id="@+id/contactFragment"
-        android:name="com.example.besafe.presentation.fragment.profile.ContactFragment"
-        android:label="ContactFragment" >
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"
+        >
         <action
-            android:id="@+id/action_contactFragment_to_addContactFragment"
-            app:destination="@id/addContactFragment" />
+            android:id="@+id/action_homeFragment_to_imageFragment"
+            app:destination="@id/imageFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav"
+            app:popUpToInclusive="true"
+            />
     </fragment>
     <fragment
-        android:id="@+id/addContactFragment"
-        android:name="com.example.besafe.presentation.fragment.profile.AddContactFragment"
-        android:label="AddContactFragment" />
+        android:id="@+id/settingsFragment"
+        android:name="com.example.besafe.presentation.fragment.settings.SettingsFragment"
+        android:label="SettingsFragment"
+        tools:layout="@layout/fragment_settings"
+        >
+        <action
+            android:id="@+id/action_settingsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="isSplash"
+            app:argType="boolean"
+            android:defaultValue="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.besafe.presentation.fragment.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash"
+        >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav"
+            app:popUpToInclusive="true"
+            />
+        <action
+            android:id="@+id/action_splashFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
 </navigation>

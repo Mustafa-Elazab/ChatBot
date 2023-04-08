@@ -3,6 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
+    id 'androidx.navigation.safeargs.kotlin'
 }
 
 android {
@@ -15,12 +16,22 @@ android {
         targetSdk 33
         versionCode 1
         versionName "1.0"
-        buildConfigField "String", "CHAT_GPT_KEY", "\"REPLACE_WITH_YOUR_API_KEY\""
+        buildConfigField "String", "CHAT_GPT_KEY", "\"Put Api Here\""
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
+
+
+        debug {
+
+            resValue("bool", "ENABLE_ADS", "true")
+
+        }
+
+
         release {
+            resValue("bool", "ENABLE_ADS", "true")
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
@@ -59,8 +70,14 @@ dependencies {
 
     //DataStore
     implementation 'androidx.datastore:datastore-preferences:1.0.0'
+    implementation 'com.google.android.gms:play-services-ads:22.0.0'
 
 
+    // Glide + Glide Transformations
+    def glide_version = "4.12.0"
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    kapt "com.github.bumptech.glide:compiler:$glide_version"
+    implementation 'jp.wasabeef:glide-transformations:4.3.0'
 
     //Room
     def room_version = "2.4.2"
