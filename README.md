@@ -5,7 +5,7 @@ ChatBot is the ultimate mobile app with seamless AI assistance at your fingertip
 ***You can Install and test latest app from below 👇***
 
 
-[![ChatBot App](https://img.shields.io/badge/ChatBot-APK-red.svg?style=for-the-badge&logo=android)](https://github.com/Mustafa-Elazab/ChatBot/tree/chatbot/apk)
+[![ChatBot App](https://img.shields.io/badge/ChatBot-APK-red.svg?style=for-the-badge&logo=android)](https://github.com/Mustafa-Elazab/ChatBot/tree/master/apk)
 
 ## About
 🚀 Anywhere GPT aims to increase productivity for mobile phone users who rely on their phones for communication. It sounds like a useful tool that could make a real difference for people who are always on the go.
