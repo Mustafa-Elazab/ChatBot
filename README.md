@@ -60,7 +60,7 @@ https://user-images.githubusercontent.com/54749693/230742792-cb4d06de-6beb-4b28-
 ## Architecture
 This app uses [***MVVM (Model View View-Model)***](https://developer.android.com/jetpack/docs/guide#recommended-app-arch) architecture.
 
-![]((https://user-images.githubusercontent.com/54749693/230748522-d33efa3c-f156-44f2-b171-ed8f1ac2c720.png)
+![](https://user-images.githubusercontent.com/54749693/230748522-d33efa3c-f156-44f2-b171-ed8f1ac2c720.png)
 
 
 ## Contributing
