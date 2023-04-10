@@ -22,16 +22,7 @@ android {
 
     buildTypes {
 
-
-        debug {
-
-            resValue("bool", "ENABLE_ADS", "true")
-
-        }
-
-
         release {
-            resValue("bool", "ENABLE_ADS", "true")
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
@@ -57,10 +48,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.0'
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'com.google.android.gms:play-services-location:21.0.1'
 
-
-    implementation "androidx.core:core-splashscreen:1.0.0-alpha01"
     //Networking libraries
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
@@ -70,7 +58,6 @@ dependencies {
 
     //DataStore
     implementation 'androidx.datastore:datastore-preferences:1.0.0'
-    implementation 'com.google.android.gms:play-services-ads:22.0.0'
 
 
     // Glide + Glide Transformations

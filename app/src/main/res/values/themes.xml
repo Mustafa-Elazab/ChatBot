@@ -17,10 +17,6 @@
 
 
 
-    <style name="Theme.MySplash" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">@color/white</item>
-        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_logo</item>
-        <item name="postSplashScreenTheme">@style/Theme.BeSafe</item>
-    </style>
+
 
 </resources>
