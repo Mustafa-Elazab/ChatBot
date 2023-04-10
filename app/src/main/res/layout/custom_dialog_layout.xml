@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="16dp"
+
+    app:cardBackgroundColor="@color/GrayLight"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+        <!-- Centered text -->
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/welcome_tv"
+            style="@style/TextAppearance.MdcTypographyStyles.Headline5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:fontFamily="@font/segoe_ui_regular"
+            android:alpha=".5"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@id/openai_tv"
+            android:text="Welcome To ChatBot"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/openai_tv"
+            style="@style/TextAppearance.MdcTypographyStyles.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/segoe_ui_regular"
+            android:gravity="start"
+            android:maxLines="1"
+            android:text="OpenAI Key"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcome_tv"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/desc_tv"
+            style="@style/TextAppearance.MdcTypographyStyles.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="Save the Key on your device for exclusive
+use to ensure maximun security and confidentiality, and get it from "
+            android:maxLines="3"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/openai_tv" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/link_tv"
+            style="@style/TextAppearance.MdcTypographyStyles.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="https://platform.openai.com/account/api-keys"
+            android:textColor="@color/Blue"
+            android:textStyle="bold"
+            android:autoLink="web"
+            app:layout_constraintBottom_toTopOf="@+id/edt_api_key"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/desc_tv" />
+
+
+
+        <!-- Text input layout -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_api_key"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="32dp"
+            android:hint="Enter text"
+            app:boxStrokeWidth="0dp"
+            app:layout_constraintTop_toBottomOf="@id/link_tv"
+            app:layout_constraintBottom_toTopOf="@+id/save_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_api_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_btn"
+            style="@style/TextAppearance.MdcTypographyStyles.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Confirm"
+            android:background="@drawable/rounded_corner"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
+

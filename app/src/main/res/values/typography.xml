@@ -14,14 +14,14 @@
     </style>
 
     <style name="TextAppearance.MdcTypographyStyles.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
-        <item name="fontFamily">@font/cairo_black</item>
-        <item name="android:fontFamily">@font/cairo_black</item>
+        <item name="fontFamily">@font/segoe_ui_bold</item>
+        <item name="android:fontFamily">@font/segoe_ui_bold</item>
         <item name="android:textSize">46sp</item>
     </style>
 
     <style name="TextAppearance.MdcTypographyStyles.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
-        <item name="fontFamily">@font/cairo_bold</item>
-        <item name="android:fontFamily">@font/cairo_bold</item>
+        <item name="fontFamily">@font/segoe_ui_bold</item>
+        <item name="android:fontFamily">@font/segoe_ui_bold</item>
         <item name="android:textSize">33sp</item>
     </style>
 

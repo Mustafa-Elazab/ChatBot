@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginBottom="20dp"
-    android:gravity="start">
+    android:layout_marginBottom="8dp"
+    android:gravity="start"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:maxWidth="280dp"
         android:layout_gravity="end"
-        android:background="@drawable/bg_color_gray_10dp_rect"
-        android:padding="8dp"
         android:layout_marginStart="8dp"
+        android:background="@drawable/send_bg"
+        android:maxWidth="280dp"
+        android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -26,24 +27,72 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="4dp"
-            android:maxWidth="200dp"
-            android:textSize="14sp"
             android:autoLink="web"
+            android:maxWidth="260dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Hello! where are you?" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/circle_blue_light"
+            app:layout_constraintTop_toTopOf="@id/img_listen"
+            app:layout_constraintBottom_toBottomOf="@id/img_listen"
+            app:layout_constraintEnd_toStartOf="@id/img_listen"
+            android:layout_marginEnd="4dp"
+            app:srcCompat="@drawable/ic_baseline_share_24" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_listen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/circle_blue_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvOtherChatMessage"
+            app:srcCompat="@drawable/ic_baseline_mic_24" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvOtherChatMessageTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAlignment="viewStart"
+            android:textColor="@color/white"
             android:textSize="8sp"
-
             app:layout_constrainedWidth="true"
-            app:layout_constraintTop_toBottomOf="@+id/tvOtherChatMessage"
-            app:layout_constraintEnd_toEndOf="@id/tvOtherChatMessage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvOtherChatMessage"
+            app:layout_constraintTop_toTopOf="@id/img_listen"
+            app:layout_constraintBottom_toBottomOf="@id/img_listen"
             tools:text="08:13pm" />
+
+
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circle_blue_light"
+       android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@id/constraint"
+        android:layout_marginEnd="8dp"
+        app:srcCompat="@drawable/ic_copy" />
+
 </RelativeLayout>

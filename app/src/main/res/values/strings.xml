@@ -43,4 +43,10 @@
     <string name="access_fine_location">ACCESS_FINE_LOCATION</string>
     <string name="foreground_service">FOREGROUND_SERVICE</string>
     <string name="need_this_permission_msg">need_this_permission_msg</string>
+
+
+
+
+
+
 </resources>

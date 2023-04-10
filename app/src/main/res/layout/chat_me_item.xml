@@ -4,18 +4,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_marginBottom="8dp"
     android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         android:maxWidth="280dp"
-        android:background="@drawable/send_bg"
-
+        android:background="@drawable/bg_color_gray_10dp_rect"
         android:padding="8dp"
+
         android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -25,10 +24,10 @@
             android:id="@+id/tvMeChatMessage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="4dp"
-            android:maxWidth="200dp"
+            android:layout_marginEnd="16dp"
+            android:maxWidth="280dp"
             android:textAlignment="viewStart"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -40,10 +39,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAlignment="viewStart"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="8sp"
+
             app:layout_constraintTop_toBottomOf="@+id/tvMeChatMessage"
             app:layout_constraintEnd_toEndOf="@id/tvMeChatMessage"
+
             tools:text="08:13pm" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
